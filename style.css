@@ -1,0 +1,83 @@
+body {
+    min-width: 1080px;
+    height: auto;
+  }
+header{
+    width: 100%;
+    height: auto;
+}
+.header_logo{
+    width: 10%;
+    height: auto;
+}
+header img {
+    width: 100%;
+    height: auto;
+    
+}
+header h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 0% 0 5% 0;
+}
+
+.product_wrapper {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.center_wrapper{
+    padding: 0 3% 6% 3%;
+}
+.product_img {
+  width: 33.3%;
+  height: auto;
+  /* overflow: hidden; */
+}
+.product_img:hover{
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+    opacity: 0.7;
+  }
+
+.product_img img {
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  border: solid 3px #000000;
+  transition-duration: 0.3s;
+}
+.text_wrapper li {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.hed{
+    display: none;
+}
+.info-img{
+    width: 500px;
+    display: flex;
+  flex-direction: column;
+}
+.modaal-container{
+    max-width: 600px;
+    height: auto;
+}
+.modaal-close:after,
+.modaal-close:before{
+    background: #ccc;
+}
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+    background: #666;
+}
+
