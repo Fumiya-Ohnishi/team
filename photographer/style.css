@@ -1,0 +1,529 @@
+body {
+    min-width: 1080px;
+    height: auto;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    background: #fff;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content:space-between;
+}
+.header_logo img{
+    width: 300px;
+    height: auto;
+}
+.header_right{
+    width: 10%;
+    height: auto;
+    
+}
+.mail_img img{
+    display: flex;
+}
+.mail_img img{
+    width: 70px;
+    height: auto;
+    /* padding-right: 100%; */
+}
+/* ハンバーガーメニュー */
+.openbtn{
+    position: fixed;
+    top: 33px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+/* xに変化 */
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #666;
+    width: 80%;
+}
+.openbtn span:nth-of-type(1){
+    top: 15px;
+}
+.openbtn span:nth-of-type(2){
+    top: 23px;
+}
+.openbtn span:nth-of-type(3){
+    top: 31px;
+}
+.openbtn.active span:nth-of-type(1){
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+.openbtn.active span:nth-of-type(2){
+    opacity: 0;
+}
+.openbtn.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+/* ナビゲーションのためのｃｓｓ */
+/* ナビゲーションの縦スクロール */
+#g-nav.panelactive #g-nav-list{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+/* ナビゲーション */
+#g-nav ul{
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    padding: 10%;
+}
+#g-nav{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: -120%;
+    width: 100%;
+    height: 100vh;
+    background: #999;
+    transition: all 0.6s;
+}
+#g-nav.panelactive{
+    right: 0;
+}
+
+/* main */
+.main{
+    width: 100%;
+    height: auto;
+    
+}
+.main_img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+    .main_img img{
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: -5%;
+}
+
+/* スクロールダウン */
+.scrolldown{
+    position: absolute;
+    bottom: 1%;
+    right: 50%;
+    animation: arrowmove 1s ease-in-out infinite;
+    padding-bottom: 5%;
+}
+
+@keyframes arrowmove{
+    0%{
+        bottom:1%;
+    }
+    50%{
+        bottom: 3%;
+    }
+    100%{
+        bottom: 1%;
+    }
+}
+.scrolldown_space{
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+}
+.scrolldown span{
+    position: absolute;
+    left: -20%;
+    bottom: 10px;
+    /* テキスト形状 */
+    color:#000;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+
+    /* 縦書き */
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+/* 矢印の描写 */
+.scrolldown:before{
+    content: "";
+    /* 描写位置 */
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /* 矢印の方向 */
+    width: 2px;
+    height: 20px;
+    background: #000;
+    transform: skewX(-31deg);
+}
+.scrolldown:after{
+    content: "";
+    /* 描写位置 */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* 矢印の形状 */
+    width: 1px;
+    height: 50px;
+    background: #000;
+}
+
+/* スライダー */
+.slider{
+    position: relative;
+    /* スライダー全体の縦幅を
+    画面いっぱい（100vh）にする */
+    height: 50vh;
+    /* min-width: 1080px; */
+    width: 100%;
+}
+.slider-tpo,
+.slider-bottom{
+    /* スライダー上下の縦幅を
+    画面の幅の半分にする */
+    height: 25vh;
+}
+/* 背景の設定 */
+.slider-item01{
+    background: url(../photographer/img/building/img1.jpg);
+}
+.slider-item02{
+    background: url(../photographer/img/building/img2.jpg);
+}
+.slider-item03{
+    background: url(../photographer/img/building/img3.jpg);
+}
+.slider-item04{
+    background: url(../photographer/img/building/img4.jpg);
+}
+.slider-item05{
+    background: url(../photographer/img/building/img5.jpg);
+}
+.slider-item06{
+    background: url(../photographer/img/building/img6.jpg);
+}
+.slider-item07{
+    background: url(../photographer/img/building/img7.jpg);
+}
+.slider-item08{
+    background: url(../photographer/img/building/img8.jpg);
+}
+.slider-item09{
+    background: url(../photographer/img/building/img9.jpg);
+}
+.slider-item10{
+    background: url(../photographer/img/building/img10.jpg);
+}
+.slider-item11{
+    background: url(../photographer/img/building/img11.jpg);
+}
+.slider-item12{
+    background: url(../photographer/img/building/img12.jpg);
+}
+.slider-item13{
+    background: url(../photographer/img/building/img13.jpg);
+}
+.slider-item14{
+    background: url(../photographer/img/building/img14.jpg);
+}
+.slider-item15{
+    background: url(../photographer/img/building/img15.jpg);
+}
+.slider-item16{
+    background: url(../photographer/img/cooking/img1.jpg);
+}
+.slider-item17{
+    background: url(../photographer/img/cooking/img2.jpg);
+}
+.slider-item18{
+    background: url(../photographer/img/cooking/img3.jpg);
+}
+.slider-item19{
+    background: url(../photographer/img/cooking/img4.jpg);
+}
+.slider-item20{
+    background: url(../photographer/img/cooking/img5.jpg);
+}
+.slider-item21{
+    background: url(../photographer/img/cooking/img6.jpg);
+}
+.slider-item22{
+    background: url(../photographer/img/cooking/img7.jpg);
+}
+.slider-item23{
+    background: url(../photographer/img/cooking/img8.jpg);
+}
+.slider-item24{
+    background: url(../photographer/img/cooking/img9.jpg);
+}
+.slider-item25{
+    background: url(../photographer/img/cooking/img10.jpg);
+}
+.slider-item26{
+    background: url(../photographer/img/cooking/img11.jpg);
+}
+.slider-item27{
+    background: url(../photographer/img/cooking/img12.jpg);
+}
+.slider-item28{
+    background: url(../photographer/img/cooking/img13.jpg);
+}
+.slider-item29{
+    background: url(../photographer/img/cooking/img14.jpg);
+}
+.slider-item30{
+    background: url(../photographer/img/cooking/img15.jpg);
+}
+
+.slider-item{
+    /* 各スライダー全体の横幅を
+    画面の高さいっぱいにする */
+    width: 100%;
+    /* 各スライダーの縦幅を
+    画面の高さの半分にする */
+    height: 25vh;
+    /* 背景画像をリピートしない */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    list-style-type: none;
+}
+
+/* アイコン コンタクトエリア */
+
+.icon_wrapper{
+    display: flex;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    justify-content: center;
+    font-size: 50px;
+    font-family: indie-flower, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.left_icon_wrapper{
+    padding: 0 2% 0 2%;
+}
+.right_icon_wrapper{
+    padding: 0 2% 0 2%;
+}
+a:link, a:visited, a:hover, a:active {
+    color: #000;
+}
+
+/* linkエリア */
+.link_wrapper{
+    width: 100%;
+    height: auto;
+    background: #E8E7E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left_link_wrapper{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15% 0;
+}
+.left_link_wrapper img{
+    width: 50%;
+    height: auto;
+}
+.right_link_wrapper{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding: 10% 0;
+}
+.right_list{
+    padding-bottom: 5%;
+}
+.right_list img{
+    width: 40%;
+    height: auto;
+}
+.main_link_text{
+    font-family: indie-flower, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px;
+}
+.link_text{
+    font-family: indie-flower, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+.link_sub_text{
+    font-size: 30px;
+    font-family: iroha-26tubaki-stdn, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    padding-top: 10%;
+    
+    /* justify-items: center;
+    align-items: center; */
+    /* text-align: center; */
+}
+.footer_wrapper{
+    width: 70%;
+    height: auto;
+    background: #E8E7E7;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+}
+.left_footer{
+    width: 33.3%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+.footer_logo{
+    width: 50px;
+    height: auto;
+    padding-bottom: 2%;
+}
+.footer_img{
+    width: 300px;
+    height: auto;
+}
+
+.center_footer{
+    width: 33.3%;
+    height: auto;
+    font-family: iroha-26tubaki-stdn, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.line {
+    margin: 0 1rem;
+    width: 4px;
+    background-color: #000;
+}
+.center_title{
+    padding-top: 5%;
+    font-size: 30px;
+}
+.center_footer ul li{
+    list-style-type: none;
+    text-align: left;
+    line-height: 200%;
+}
+.right_footer{
+    width: 33.3%;
+    height: auto;
+}
+.right_title,
+.right_sub_title,
+.center_title{
+    font-family: indie-flower, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.right_title,.center_title{
+    font-size: 50px;
+}
+.right_sub_title{
+    font-size: 30px;
+    text-align: left;
+}
+.right_sub_menu{
+    display: flex;
+    flex-direction: column;
+}
+.right_sub_menu a{
+    padding: 2% 0;
+}
+.btn{
+    width: 100%;
+    height: auto;
+    padding: 2%;
+}
+.btnarrow5{
+    position: relative;
+    border: 1px solid #555;
+    padding: 8px 30px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #333;
+    transition: all .2s linear;
+}
+.btnarrow5:hover{
+    background: #333;
+    color: #fff;
+}
+.btnarrow5::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -26px;
+    width: 40px;
+    height: 1px;
+    background: #333;
+    transition: all .2s linear;
+}
+.btnarrow5::after{
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: -21px;
+    width: 1px;
+    height: 12px;
+    background: #333;
+    transform: skewX(45deg);
+    transition: all .2s linear;
+}
+.btnarrow5:hover::before{
+    right: -30px;
+}
+.btnarrow5:hover::after{
+    right:-25px;
+}
