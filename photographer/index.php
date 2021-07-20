@@ -58,9 +58,10 @@
                 <nav id="g-nav">
                     <div class="g-nav-list">
                         <ul>
-                            <li><a href="#">TOP</a></li>
-                            <li><a href="#">Cooking</a></li>
-                            <li><a href="#">Building</a></li>
+                            <li><a href="../photographer/">TOP</a></li>
+                            <li><a href="../photographer/cooking.php">Cooking</a></li>
+                            <li><a href="../photographer/building.php">Building</a></li>
+                            <li><a href="../photographer/staff.php">Staff</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
@@ -121,12 +122,7 @@
                     <a href="#">Gallery</a>
                 </div>
             </div>
-            <div class="center_icon_wrapper">
-                <img src="../photographer/img/staff.jpg" />
-                <div class="icon_text">
-                    <a href="#">Staff</a>
-                </div>
-            </div>
+
             <div class="right_icon_wrapper">
                 <img src="../photographer/img/mailsab.jpg" />
                 <div class="icon_text">
@@ -137,14 +133,16 @@
 
         <div class="link_wrapper">
             <div class="left_link_wrapper">
-                <a href="#"><img src="../photographer/img/building/img28.jpg" /></a>
+                <div class="img-wrap">
+                    <img src="/photographer/img/building/img28.jpg" />
+                </div>
                 <div class="main_link_text">
                     Work
                 </div>
             </div>
             <div class="right_link_wrapper">
                 <div class="right_list">
-                    <a href="#"><img src="../photographer/img/cooking/img16.jpg" /></a>
+                    <a href="#" class="right_imghover"><img src="/photographer/img/cooking/img16.jpg" /></a>
                     <div class="link_text">
                         Cooking
                     </div>
@@ -153,7 +151,7 @@
                     </div>
                 </div>
                 <div class="right_list">
-                    <a href="#"><img src="../photographer/img/building/img22.jpg" /></a>
+                    <a href="#" class="right_imghover"><img src="/photographer/img/building/img22.jpg" /></a>
                     <div class="link_text">
                         Building
                     </div>
@@ -168,11 +166,6 @@
 
     <footer>
         <div class="footer_wrapper">
-            <div class="left_footer">
-                <img class="footer_logo" src="../photographer/img/WEB用.jpg" />
-                <img class="footer_img" src="../photographer/img/chamoro sei.web.jpg" />
-            </div>
-            <div class="line"></div>
             <div class="center_footer">
                 <div class="center_title">
                     Access
@@ -193,35 +186,41 @@
                 <div class="right_title">
                     menu
                 </div>
-                <div class="right_sub_title">
-                    <a href="#">Cooking</a>
+                <div class="wrapper_menu">
+                    <div class="right_menu">
+                        <div class="right_sub_title">
+                            <a href="cooking.php">Cooking</a>
+                        </div>
+                        <div class="right_sub_menu">
+                            <a href="/photographer/cooking.php#kodawari">
+                                こだわり
+                            </a>
+                            <a href="/photographer/building.php#move">
+                                撮影の流れ
+                            </a>
+                            <a href="/photographer/cooking.php#plan">
+                                料金プラン
+                            </a>
+                        </div>
+                    </div>
+                    <div class="left_menu">
+                        <div class="right_sub_title">
+                            <a href="building.php">Building</a>
+                        </div>
+                        <div class="right_sub_menu">
+                            <a href="building.php#kodawari">
+                                こだわり
+                            </a>
+                            <a href="building.php#move">
+                                撮影の流れ
+                            </a>
+                            <a href="building.php#plan">
+                                料金プラン
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="right_sub_menu">
-                    <a href="#">
-                        こだわり
-                    </a>
-                    <a href="#">
-                        撮影の流れ
-                    </a>
-                    <a href="#">
-                        料金プラン
-                    </a>
-                </div>
-                <div class="right_sub_title">
-                    <a href="#">Building</a>
-                </div>
-                <div class="right_sub_menu">
-                    <a href="#">
-                        こだわり
-                    </a>
-                    <a href="#">
-                        撮影の流れ
-                    </a>
-                    <a href="#">
-                        料金プラン
-                    </a>
-                </div>
-                <div class="btn">
+                <div class="btn2">
                     <a href="#" class="btnarrow5">お問い合わせはこちら</a>
                 </div>
             </div>
