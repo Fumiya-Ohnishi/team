@@ -41,21 +41,21 @@
     </header>
     <div class="form">
       <div class="mb-3">
-        <label for="exampleFormControlInput12" class="form-label">name</label>
-        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="佐藤 太郎">
+        <label for="exampleFormControlInput12" class="form-label" name="name">name</label>
+        <input type="text" class="form-control" name="name" id="exampleFormControlInput2" placeholder="佐藤 太郎">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <label for="exampleFormControlInput1" class="form-label" name="email">Email</label>
+        <input type="text" class="form-control" name="email"id="exampleFormControlInput1" placeholder="name@example.com">
       </div>
       <div class="textarea">
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">お問い合わせ内容</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
       </div>
       <div class="btn_wrapper">
-        <button type="button" class="btn btn-outline-primary">送信</button>
+        <button type="submit" class="btn btn-outline-primary">送信</button>
       </div>
     </div>
     <footer>
