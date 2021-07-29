@@ -1,0 +1,107 @@
+html {
+  font-size: 100%;
+}
+
+body {
+    min-width: 1080px;
+    height: auto;
+    background-color: #f4f9ff;
+    color: #333;
+    font-size: 0.875rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main_img{
+  padding-bottom: 5%;
+}
+
+
+.container{
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+.site-title{
+  margin: 0;
+  padding-top: 4%;
+}
+.site-title img{
+  width: 17%;
+  height: auto;
+  margin: 0;
+}
+
+#index{
+  background-color: #fff;
+  padding: 30px 0;
+  margin-bottom: 60px; 
+}
+#index ol{
+  padding-left: 20%;
+  line-height: 300%;
+}
+#index ol li{
+  font-size: 14px;
+}
+.index_title{
+  padding-left:18%;
+}
+.index_title h2{
+  margin: -5px 0;
+  font-size: 18px;
+}
+
+#detail{
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
+.detail_img{
+  width: 100%;
+  height: auto;
+  margin-right: 60px;
+}
+#detail img{
+  width: 270px;
+  height: auto;
+}
+.detail_wrapper{
+  display: flex;
+}
+.index_list{
+  padding: 0;
+}
+.index_list dl{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #dedede;
+  border-bottom: solid 1px #dedede;
+  padding: 16px 0;
+}
+.index_list dt{
+  width: 25%;
+  height: auto;
+  margin: 0;
+}
+.index_list dd{
+  width: 75%;
+  height: auto;
+  margin: 0;
+}
+.index_list p{
+  width: 100%;
+  height: auto;
+}
+.book_title{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer{
+  padding-left: 20%;
+}
